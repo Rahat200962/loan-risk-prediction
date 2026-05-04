@@ -95,90 +95,7 @@ To evaluate model performance, the following metrics were used:
 * **Random Forest** demonstrated strong generalization and stability across metrics.
 * **Sigmoid SVM (SSVC)** showed comparatively lower performance, indicating it is less suitable for this dataset.
 
-👉 Overall, the results demonstrate that machine learning models can effectively predict loan default risk with high accuracy and reliability.
-# Loan Default Prediction using Machine Learning
-
-## 📌 Project Overview
-
-This project focuses on predicting whether a borrower will default on a loan using machine learning techniques. Financial institutions face significant risks when issuing loans, and accurate prediction of loan repayment behavior helps in minimizing financial losses and improving decision-making.
-
----
-
-## 🎯 Objective
-
-The main objective of this project is to classify borrowers into:
-
-* **High-risk (default)**
-* **Low-risk (non-default)**
-
-The target variable used is:
-
-* `repay_fail` (1 = default, 0 = repaid)
-
----
-
-## 📊 Dataset Description
-
-* Total Records: **38,479**
-* Features: **24 (23 independent + 1 target)**
-* Data Types:
-
-  * Numerical (e.g., loan amount, income, interest rate)
-  * Categorical (e.g., home ownership, loan purpose, verification status)
-
----
-
-## ⚙️ Data Preprocessing
-
-The following steps were applied:
-
-* **Handling Missing Values**
-
-  * Used median imputation for numerical features
-
-* **Feature Scaling**
-
-  * Applied MinMaxScaler for normalization
-
-* **Encoding**
-
-  * Ordinal Encoding (for ordered features like loan term)
-  * One-Hot Encoding (for categorical features)
-
----
-
-## 🤖 Machine Learning Models Used
-
-The following models were implemented and compared:
-
-* Logistic Regression
-* Decision Tree (Gini & Entropy)
-* Support Vector Machine (Linear, RBF, Polynomial, Sigmoid)
-* Random Forest
-
----
-
-## 🔧 Hyperparameter Tuning
-
-* Used **GridSearchCV** for optimization
-* Tuned parameters such as:
-
-  * max_depth, min_samples_split (Decision Tree)
-  * C, kernel, gamma (SVM)
-  * n_estimators, depth (Random Forest)
-
----
-
-## 📈 Evaluation Metrics
-
-Models were evaluated using:
-
-* Accuracy
-* Recall
-
-👉 Recall was prioritized because detecting loan defaulters is critical in financial risk management.
-
----
+ Overall, the results demonstrate that machine learning models can effectively predict loan default risk with high accuracy and reliability.
 
 ##  Overfitting Handling
 
@@ -188,7 +105,7 @@ Models were evaluated using:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * Scikit-learn
@@ -209,6 +126,8 @@ Models were evaluated using:
 ##  Author
 
 **Rahat Idrees**
+
 MSc Artificial Intelligence (Ongoing)
+
 Dublin, Ireland
 
