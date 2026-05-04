@@ -1,4 +1,4 @@
-# loan-risk-prediction
+# Loan-Risk-Prediction
 Machine learning project for predicting loan default using classification models
 
 ## Project Overview
@@ -103,7 +103,7 @@ To evaluate model performance, the following metrics were used:
 * Used cross-validation
 * Controlled model complexity
 
----
+
 
 ##  Technologies Used
 
@@ -112,16 +112,12 @@ To evaluate model performance, the following metrics were used:
 * Pandas
 * NumPy
 
-
----
-
-## 🚀 Future Improvements
+##  Future Improvements
 
 * Use larger and more diverse datasets
 * Apply deep learning models
 * Integrate decision-focused learning approaches
 
----
 
 ##  Author
 
