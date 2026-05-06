@@ -33,12 +33,12 @@ def evaluate_model(model, X, y,m,s):
 from numpy import mean, std
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
-from sklearn.metrics import accuracy_score, recall_score
+from sklearn.metrics import accuracy_score, recall_score, f1_score, precision_score
 # get the models to evaluate
 models = get_models()
 # evaluate the models and store results
 results=[]
 for name, model in models.items():
-	acc, re, f = evaluate_model(model, X_final, y, 10,0.2)
-	results.append((name, acc, re, f))
-	print(f"{name}: Accuracy = {acc:.4f}, Recall = {re:.4f}")
+	acc, re, f1, pre = evaluate_model(model, X_final, y, 10,0.2)
+	results.append((name, acc, re, f1, pre))
+	print(f"{name}: Accuracy = {acc:.4f}, Precision = {pre:.4f}, Recall = {re:.4f}, F1_Score = {f1:.4f}")
